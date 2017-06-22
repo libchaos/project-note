@@ -5,16 +5,12 @@
 ```javascript
 const parent.childent = []
 for (parent of parents) {
-  parent.children = map[parent]
-  parent.children.push()
+  parent.children = map[parent] || []
 }
 
 const map = {}
 
-map[parent] = []
-
-
 for (child of children) {
-  child[parent]
+  map[child.parent].push(child[parent])
 }
 ```
